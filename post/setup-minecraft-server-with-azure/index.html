@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="Setup Minecraft Server with Azure for Free!">
+<meta itemprop="name" content="Setup Minecraft Server with Azure">
 <meta itemprop="description" content="เปิดเซิร์ฟมายคราฟ์ด้วย Azure">
 <meta itemprop="image" content="https://migmikael.github.io/blog/post/img/minecraft.jpg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Setup Minecraft Server with Azure for Free!">
+<meta name="twitter:title" content="Setup Minecraft Server with Azure">
 <meta name="twitter:description" content="เปิดเซิร์ฟมายคราฟ์ด้วย Azure">
 <meta name="twitter:creator" content="@mig_mikael">
 <meta name="twitter:image:src" content="https://migmikael.github.io/blog/post/img/minecraft.jpg">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" />
+<meta property="og:url" content="https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Setup Minecraft Server with Azure for Free!" />
+<meta property="og:title" content="Setup Minecraft Server with Azure" />
 <meta property="og:description" content="เปิดเซิร์ฟมายคราฟ์ด้วย Azure" />
 <meta property="og:image" content="https://migmikael.github.io/blog/post/img/minecraft.jpg" />
 
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
-                    <h1>Setup Minecraft Server with Azure for Free!</h1>
+                    <h1>Setup Minecraft Server with Azure</h1>
                     <h2 class="subheading">เปิดเซิร์ฟมายคราฟ์ด้วย Azure</h2>
                     <span class="meta">Posted by Mig Mikael
                     on July 15, 2018</span>
@@ -81,33 +81,41 @@
             <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h1>Introduction</h1>
-<p>วันนี้จะมาสอนเปิดเซิร์ฟมายคราฟกันแบบฟรีๆ โดยใช้คลาวด์ของไมโครซอฟต์ที่ปัจจุบันเป็นเจ้าของเกม</p>
+<p>มายคราฟเป็นเกมที่เล่นคนเดียวแล้วไม่สนุกเท่าไหร่ วันนี้ผมเลยจะมาสอนเปิดเซิร์ฟมายคราฟ์โดยใช้คลาวด์ของไมโครซอฟต์ที่ปัจจุบันเป็นเจ้าของเกม</p>
 <h1>Step 1</h1>
 <p>ก่อนอื่นเลยเราต้องสร้าง Azure Account ที่นี่ <a href="https://azure.microsoft.com/en-gb/free/">https://azure.microsoft.com/en-gb/free/</a>
 โดยเราจะได้ฟรีเครดิตสำหรับใช้งานฟรีจำนวน 200 usd เป็นเวลา 1 เดือน</p>
-<p><br></p>
-<img src="https://migmikael.github.com/blog/post/img/minecraft_0.png" width="100%" />
-<img src="https://migmikael.github.com/blog/post/img/minecraft_05.png" width="100%" />
+<img src="https://migmikael.github.com/blog/post/img/minecraft_azure.png" width="100%" />
 <p><br></p>
 <h1>Step 2</h1>
-<p>เมื่อเราสมัครใช้งานสำเร็จแล้วอันดับต่อไปเราจะมาสร้าง Resource หรือกลุ่มของทรัพยากรที่จำเป็นสำหรับมายคราฟเซิร์ฟเวอร์ โดยปกติถ้าเป็นคลาวด์ของเจ้าอื่นๆ เราต้องค่อยๆ เพิ่ม Resource ที่จำเป็นที่ละอันแลัวเซ็ตค่าให้มันทำงานร่วมกันได้ แต่ Azure มีเซ็ตของทรัพยากรที่ตั้งค่ามาเรียบร้อยแล้วให้เราใช้งานได้ทันทีและหนึ่งในเซตที่ว่าก็คือเซตสำหรับ Minecraft Server</p>
-<p>จากหน้า Dashboard ให้เราไปที่เมนู Create Resource ด้านซ้ายบน
-<br></p>
+<p>เมื่อเราสมัครใช้งานสำเร็จแล้วอันดับต่อไปเราจะมาสร้าง Resource หรือกลุ่มของทรัพยากรที่จำเป็นสำหรับมายคราฟเซิร์ฟเวอร์ โดยปกติถ้าเป็นคลาวด์ของเจ้าอื่นๆ เราต้องค่อยๆ เพิ่ม Resource ที่จำเป็นที่ละอันแลัวเซ็ตค่าให้มันทำงานร่วมกันได้ แต่ Azure มีเซ็ตของทรัพยากรที่ตั้งค่ามาเรียบร้อยแล้วให้เราใช้งานได้ทันทีและหนึ่งในเซตที่ว่าก็คือเซตสำหรับ Minecraft Server
+<br>
+จากหน้า Dashboard ให้เราไปที่เมนู Create Resource ด้านซ้ายบน ค้นหา Minecraft Server</p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_0.png" width="100%" />
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_05.png" width="100%" />
+<p><br>
+Location แนะนำให้เลือกเป็น Southeast Asia เพื่อลดอาการแล็ค</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_1.png" width="100%" />
-<p>Location แนะนำให้เลือกเป็น Southeast Asia เพื่อลดอาการแล็ค</p>
+<p><br>
+Size เลือกตามงบประมาณที่มี</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_2.png" width="100%" />
-<p>Size เลือกตามงบประมาณที่มี</p>
+<p><br>
+ขั้นนี้เป็นการตั้งค่า property ของ server </p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_3.png" width="100%" />
-<p>ขั้นนี้เป็นการตั้งค่า property ของ server </p>
+<p><br>
+สรุปข้อมูลก่อนสั่งซื้อ</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_4.png" width="100%" />
-<p>สรุปข้อมูลก่อนสั่งซื้อ</p>
+<p><br>
+ซื้อเลยยยยยยยย</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_5.png" width="100%" />
-<p>ซื้อเลยยยยยยยย</p>
+<p><br>
+ซื้อเรียบร้อยแล้วจะเห็นกลุ่มของ Resource ที่หน้า Dashboard เราแบบนี้ครับ</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_6.png" width="100%" />
-<p>ซื้อเรียบร้อยแล้วจะเห็นกลุ่มของ Resource ที่หน้า Dashboard เราแบบนี้ครับ</p>
+<p><br>
+IP ของเซิร์ฟเราสามารถดูได้ด้วยการเข้าไปใน Resource ที่เป็น virtual machine</p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_7.png" width="100%" />
-<p>IP ของเซิร์ฟเราสามารถดูได้ด้วยการเข้าไปใน Resource ที่เป็น virtual machine
-<br></p>
+<p><br></p>
 <h1>Step 3</h1>
 <p>หลังจากที่เรากดสร้างเซิร์ฟเวอร์เรียบร้อยแล้ว อันดับต่อไปเราต้องเข้าไปที่เซิร์ฟเวอร์เราเพื่อเซ็ตค่าต่างๆ ที่จำเป็นโดยใช้โปรแกรม ssh client ที่คุณถนัด (สำหรับ Windows แนะนำ Putty, สำหรับ Mac แนะนำ Terminus)
 Putty : <a href="https://www.putty.org">https://www.putty.org</a>
@@ -115,22 +123,32 @@ Terminus : <a href="https://www.termius.com">https://www.termius.com</a></p>
 <h1>Step 4</h1>
 <p>เมื่อ Login เข้ามาในเซิร์ฟได้แล้วอันดับต่อไปให้เรา cd ไปที่ /srv/minecraft_server
 จากนั้นให้เราอัพเดทเวอร์ชั่นมายคราฟเป็นเวอร์ชั่นล่าสุดโดยมีสองวิธีให้เลือกดังนี้</p>
-<p>⋅⋅⋅1. โหลดด้วย curl</p>
-<p>⋅⋅⋅วิธีนี้ให้เราพิมพ์คำสั่ง</p>
-<pre><code>sudo curl --remote-name https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar</code></pre>
-<p>⋅⋅⋅คำสั่งนี่จะโหลดไฟล์ jar สำหรับเปิด server เวอร์ชั่น 1.10
-⋅⋅⋅สามารถดูลิงค์เวอร์ชั่นต่างๆ ได้ที่นี่ <a href="https://minecraft.net/en/download/server">https://minecraft.net/en/download/server</a></p>
-<p>⋅⋅⋅2. โหลดด้วยคอมเราแล้วค่อยโยนไฟล์ไปที่เซิร์ฟด้วย SFTP</p>
-<p>⋅⋅⋅วิธีนี้ให้เราดาวน์โหลดไฟล์ jar สำหรับเปิด server ไว้ที่เครื่องเราก่อน แล้วค่อยโยนไปที่เซิร์ฟด้วยโปรแกรมเช่น Filezilla, BitwiseSSH หรือ Cyberduck
-⋅⋅⋅(โยนไฟล์ jar ไว้ที่ /srv/minecraft_server)
-⋅⋅⋅<strong>หมายเหตุ</strong> ถ้าต้องการให้เซิร์ฟสามารถลงปลั๊กอินได้ ให้ดาว์นโหลดไฟล์ jar จาก Bukkit แทน สามารถโหลดได้ที่นี่ <a href="https://getbukkit.org">https://getbukkit.org</a></p>
+<blockquote>
+<ol>
+<li>โหลดด้วย curl</li>
+</ol>
+</blockquote>
+<p>วิธีนี้ให้เราพิมพ์คำสั่ง</p>
+<pre><code>
+sudo curl --remote-name https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar
+</code></pre>
+<p>คำสั่งนี่จะโหลดไฟล์ jar สำหรับเปิด server เวอร์ชั่น 1.10
+สามารถดูลิงค์เวอร์ชั่นต่างๆ ได้ที่นี่ <a href="https://minecraft.net/en/download/server">https://minecraft.net/en/download/server</a></p>
+<blockquote>
+<ol start="2">
+<li>โหลดด้วยคอมเราแล้วค่อยโยนไฟล์ไปที่เซิร์ฟด้วย SFTP</li>
+</ol>
+</blockquote>
+<p>วิธีนี้ให้เราดาวน์โหลดไฟล์ jar สำหรับเปิด server ไว้ที่เครื่องเราก่อน แล้วค่อยโยนไปที่เซิร์ฟด้วยโปรแกรมเช่น Filezilla, BitwiseSSH หรือ Cyberduck
+(โยนไฟล์ jar ไว้ที่ /srv/minecraft_server)
+<strong>หมายเหตุ</strong> ถ้าต้องการให้เซิร์ฟสามารถลงปลั๊กอินได้ ให้ดาว์นโหลดไฟล์ jar จาก Bukkit แทน สามารถโหลดได้ที่นี่ <a href="https://getbukkit.org">https://getbukkit.org</a></p>
 <h1>Step 5</h1>
 <p>อันดับต่อไปให้เราเปิดเกมมายคราฟของเราแล้วไปที่เมนู Multiplayer จากนั้นกดที่ Add Server ตั้งชื่อเซิร์ฟนิดหน่อยแล้วให้เราใส่ IP ของเซิร์ฟเราตามด้วย :25565 (หมายเลยพอร์ท)
 <br></p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_add.png" width="100%" />
 <p><br></p>
 <h1>Step 6</h1>
-<p>สำหรับผู้ที่ไม่อยากเปิดเซิร์ฟเอง สามารถเข้ามาเล่น SoHardServer ของผมได้ที่ </p>
+<p>สำหรับผู้ที่ไม่อยากเปิดเซิร์ฟเอง สามารถเข้ามาเล่น SoHardServer ของผมได้ที่ เตือนไว้ก่อนว่าเซิร์ฟที่เซ็ตความยากไว้ที่ระดับ HardCore นะจ๊ะ</p>
 <pre><code>13.67.55.82:25565
 </code></pre>
 <p>แผนที่เซิร์ฟดูได้ที่นี่ครับ
@@ -149,7 +167,7 @@ Terminus : <a href="https://www.termius.com">https://www.termius.com</a></p>
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="https://twitter.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+              <a href="https://twitter.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure" target="_blank">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -157,7 +175,7 @@ Terminus : <a href="https://www.termius.com">https://www.termius.com</a></p>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="http://www.facebook.com/sharer.php?u=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+              <a href="http://www.facebook.com/sharer.php?u=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure" target="_blank">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -165,7 +183,7 @@ Terminus : <a href="https://www.termius.com">https://www.termius.com</a></p>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://plus.google.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+              <a href="https://plus.google.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure" target="_blank">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
