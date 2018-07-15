@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Setup Minecraft Server with Azure for Free!">
+<meta itemprop="description" content="เปิดเซิร์ฟมายคราฟ์ฟรีฟรีด้วย Azure">
+<meta itemprop="image" content="https://migmikael.github.io/blog/post/img/minecraft.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Setup Minecraft Server with Azure for Free!">
+<meta name="twitter:description" content="เปิดเซิร์ฟมายคราฟ์ฟรีฟรีด้วย Azure">
+<meta name="twitter:creator" content="@mig_mikael">
+<meta name="twitter:image:src" content="https://migmikael.github.io/blog/post/img/minecraft.jpg">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Setup Minecraft Server with Azure for Free!" />
+<meta property="og:description" content="เปิดเซิร์ฟมายคราฟ์ฟรีฟรีด้วย Azure" />
+<meta property="og:image" content="https://migmikael.github.io/blog/post/img/minecraft.jpg" />
+
+        <title>Mikael Blog</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://migmikael.github.io/blog/post/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="https://migmikael.github.io/blog/post/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="https://migmikael.github.io/blog/post/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="https://migmikael.github.io/blog/post">Mikael Blog</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://migmikael.github.io/#works">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://migmikael.github.io/#competition">COMPETITION</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://migmikael.github.io/#education">EDUCATION</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+            <header class="masthead" style="background-image: url('../img/minecraft.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-heading">
+                    <h1>Setup Minecraft Server with Azure for Free!</h1>
+                    <h2 class="subheading">เปิดเซิร์ฟมายคราฟ์ฟรีฟรีด้วย Azure</h2>
+                    <span class="meta">Posted by Mig Mikael
+                    on July 12, 2018</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h1>Introduction</h1>
+<p>วันนี้จะมาสอนเปิดเซิร์ฟมายคราฟกันแบบฟรีๆ โดยใช้คลาวด์ของไมโครซอฟต์ที่ปัจจุบันเป็นเจ้าของเกม</p>
+<h1>Step 1</h1>
+<p>ก่อนอื่นเลยเราต้องสร้าง Azure Account ที่นี่ <a href="https://azure.microsoft.com/en-gb/free/">https://azure.microsoft.com/en-gb/free/</a>
+โดยเราจะได้ฟรีเครดิตสำหรับใช้งานฟรีจำนวน 200 usd เป็นเวลา 1 เดือน</p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_0.png" width="100%" />
+<p><br></p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_05.png" width="100%" />
+<p><br></p>
+<h1>Step 2</h1>
+<p>เมื่อเราสมัครใช้งานสำเร็จแล้วอันดับต่อไปเราจะมาสร้าง Resource หรือกลุ่มของทรัพยากรที่จำเป็นสำหรับมายคราฟเซิร์ฟเวอร์ โดยปกติถ้าเป็นคลาวด์ของเจ้าอื่นๆ เราต้องค่อยๆ เพิ่ม Resource ที่จำเป็นที่ละอันแลัวเซ็ตค่าให้มันทำงานร่วมกันได้ แต่ Azure มีเซ็ตของทรัพยากรที่ตั้งค่ามาเรียบร้อยแล้วให้เราใช้งานได้ทันทีและหนึ่งในเซตที่ว่าก็คือเซตสำหรับ Minecraft Server</p>
+<p>จากหน้า Dashboard ให้เราไปที่เมนู Create Resource ด้านซ้ายบน
+<br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_1.png" width="100%" />
+<p><br></p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_2.png" width="100%" />
+<p><br></p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_3.png" width="100%" />
+<p><br></p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_4.png" width="100%" />
+<p><br></p>
+<p><br></p>
+<img src="https://migmikael.github.com/blog/post/img/minecraft_5.png" width="100%" />
+<p><br></p>
+<h1>Step 3</h1>
+<p>หลังจากที่เรากดสร้างเซิร์ฟเวอร์เรียบร้อยแล้ว อันดับต่อไปเราต้องเข้าไปที่เซิร์ฟเวอร์เราเพื่อเซ็ตค่าต่างๆ ที่จำเป็นโดยใช้โปรแกรม ssh client ที่คุณถนัด (สำหรับ Windows แนะนำ Putty, สำหรับ Mac แนะนำ Terminus) </p>
+<h1>Step 4</h1>
+<p>เมื่อ Login เข้ามาในเซิร์ฟได้แล้วอันดับต่อไปให้เรา cd ไปที่ /srv/minecraft_server </p>
+<p>จากนั้นให้เราอัพเดทเวอร์ชั่นมายคราฟเป็นเวอร์ชั่นล่าสุดโดยมีสองวิธีให้เลือกดังนี้</p>
+<blockquote>
+<ol>
+<li>โหลดด้วย curl
+วิธีนี้ให้เราพิมพ์คำสั่ง
+&quot;sudo curl --remote-name <a href="https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar">https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar</a>&quot;</li>
+</ol>
+</blockquote>
+<p>คำสั่งนี่จะโหลดไฟล์ jar สำหรับเปิด server
+สามารถดูลิงค์เวอร์ชั่นต่างๆ ได้ที่นี่ <a href="https://minecraft.net/en/download/server">https://minecraft.net/en/download/server</a></p>
+<blockquote>
+<ol start="2">
+<li>โหลดด้วยคอมเราจากนั้นโยนไฟล์ไปที่เซิร์ฟด้วย SFTP
+วิธีนี้ให้เราดาวน์โหลดไฟล์ jar สำหรับเปิด server ไว้ที่เครื่องเราก่อน แล้วค่อยโยนไปที่เซิร์ฟด้วยโปรแกรมเช่น Filezilla, BitwiseSSH หรือ Cyberduck
+(โยนไฟล์ jar ไว้ที่ /srv/minecraft_server)</li>
+</ol>
+</blockquote>
+<p>หมายเหตุ ถ้าต้องการให้เซิร์ฟสามารถลงปลั๊กอินได้ ให้ดาว์นโหลดไฟล์ jar จาก Bukkit แทน สามารถโหลดได้ที่นี่ <a href="https://dev.bukkit.org/projects">https://dev.bukkit.org/projects</a></p>
+<h1>Step 5</h1>
+<p>อันดับต่อไปให้เราเปิดเกมมายคราฟของเราแล้วไปที่เมนู Multiplayer จากนั้นกดที่ Add Server จากนั้นให้เราใส่ IP ของเซิร์ฟเราตามด้วย :25565 (หมายเลยพอร์ท)</p>            </div>
+            </div>
+        </div>
+    </article>
+
+
+    <hr>
+
+        <!-- Footer -->
+        <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://www.facebook.com/sharer.php?u=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://plus.google.com/share?url=https://migmikael.github.io/blog/post/setup-minecraft-server-with-azure-for-free" target="_blank">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Share this article</p>
+        </div>
+      </div>
+    </div>
+</footer>
+      
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://migmikael.github.io/blog/post/vendor/jquery/jquery.min.js"></script>
+        <script src="https://migmikael.github.io/blog/post/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Custom scripts for this template -->
+        <script src="https://migmikael.github.io/blog/post/js/main.js"></script>
+    </body>
+</html>
