@@ -84,7 +84,8 @@
 <p>มายคราฟเป็นเกมที่เล่นคนเดียวแล้วไม่สนุกเท่าไหร่ วันนี้ผมเลยจะมาสอนเปิดเซิร์ฟมายคราฟ์โดยใช้คลาวด์ของไมโครซอฟต์ที่ปัจจุบันเป็นเจ้าของเกม</p>
 <h1>Step 1</h1>
 <p>ก่อนอื่นเลยเราต้องสร้าง Azure Account ที่นี่ <a href="https://azure.microsoft.com/en-gb/free/">https://azure.microsoft.com/en-gb/free/</a>
-โดยเราจะได้ฟรีเครดิตสำหรับใช้งานฟรีจำนวน 200 usd เป็นเวลา 1 เดือน</p>
+โดยเราจะได้ฟรีเครดิตสำหรับใช้งานฟรีจำนวน 200 usd เป็นเวลา 1 เดือน
+<br></p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_azure.png" width="100%" />
 <p><br></p>
 <h1>Step 2</h1>
@@ -129,8 +130,7 @@ Terminus : <a href="https://www.termius.com">https://www.termius.com</a></p>
 </ol>
 </blockquote>
 <p>วิธีนี้ให้เราพิมพ์คำสั่ง</p>
-<pre><code>
-sudo curl --remote-name https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar
+<pre><code>sudo curl --remote-name https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar
 </code></pre>
 <p>คำสั่งนี่จะโหลดไฟล์ jar สำหรับเปิด server เวอร์ชั่น 1.10
 สามารถดูลิงค์เวอร์ชั่นต่างๆ ได้ที่นี่ <a href="https://minecraft.net/en/download/server">https://minecraft.net/en/download/server</a></p>
@@ -140,10 +140,10 @@ sudo curl --remote-name https://s3.amazonaws.com/Minecraft.Download/versions/1.1
 </ol>
 </blockquote>
 <p>วิธีนี้ให้เราดาวน์โหลดไฟล์ jar สำหรับเปิด server ไว้ที่เครื่องเราก่อน แล้วค่อยโยนไปที่เซิร์ฟด้วยโปรแกรมเช่น Filezilla, BitwiseSSH หรือ Cyberduck
-(โยนไฟล์ jar ไว้ที่ /srv/minecraft_server)
-<strong>หมายเหตุ</strong> ถ้าต้องการให้เซิร์ฟสามารถลงปลั๊กอินได้ ให้ดาว์นโหลดไฟล์ jar จาก Bukkit แทน สามารถโหลดได้ที่นี่ <a href="https://getbukkit.org">https://getbukkit.org</a></p>
+(โยนไฟล์ jar ไว้ที่ /srv/minecraft_server)</p>
+<p><strong>หมายเหตุ</strong> ถ้าต้องการให้เซิร์ฟสามารถลงปลั๊กอินได้ ให้ดาว์นโหลดไฟล์ jar จาก Bukkit แทน สามารถโหลดได้ที่นี่ <a href="https://getbukkit.org">https://getbukkit.org</a></p>
 <h1>Step 5</h1>
-<p>อันดับต่อไปให้เราเปิดเกมมายคราฟของเราแล้วไปที่เมนู Multiplayer จากนั้นกดที่ Add Server ตั้งชื่อเซิร์ฟนิดหน่อยแล้วให้เราใส่ IP ของเซิร์ฟเราตามด้วย :25565 (หมายเลยพอร์ท)
+<p>อันดับต่อไปให้เราเปิดเกมมายคราฟของเราแล้วไปที่เมนู Multiplayer จากนั้นกดที่ Add Server ตั้งชื่อเซิร์ฟนิดหน่อยแล้วให้เราใส่ IP ของเซิร์ฟเราตามด้วย :25565 (หมายเลยพอร์ท) แล้วก็เข้าไปเล่นได้เลยยย
 <br></p>
 <img src="https://migmikael.github.com/blog/post/img/minecraft_add.png" width="100%" />
 <p><br></p>
